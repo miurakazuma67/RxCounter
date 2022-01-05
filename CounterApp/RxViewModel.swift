@@ -9,7 +9,8 @@ import RxSwift
 import RxCocoa
 
 class RxViewModel: RxViewModelType {
-
+    
+    var outputs: RxViewModelOutput?
     private let countRelay = BehaviorRelay<Int>(value: 0)
     private let initialCount = 0
     private let disposeBag = DisposeBag()
